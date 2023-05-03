@@ -10,7 +10,7 @@ public class PullRequestRegressionTest {
 
     void onPrComment(@PullRequestReviewComment.Created  GHEventPayload.PullRequestReviewComment pullRequestReviewComment) throws IOException {
         if (pullRequestReviewComment.getComment().getBodyText().startsWith("/regression-bot")) {
-            pullRequestReviewComment.getPullRequest().comment("OK! starting performance regresssion test!");
+            pullRequestReviewComment.getPullRequest().comment("OK! starting performance regression test!");
         }
     }
 
