@@ -1,0 +1,5 @@
+name: Demo Repo - Simple performance test
+id: demo-repo-simple-test
+repo: johnaohara/demo-repo
+authorizedUsers:
+  - johnaohara

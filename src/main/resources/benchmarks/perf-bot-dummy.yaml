@@ -1,0 +1,5 @@
+name: Perf Bot - Dummy performance test
+id: perf-bot
+repo: johnaohara/perf-bot
+authorizedUsers:
+  - johnaohara

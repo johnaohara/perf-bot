@@ -1,8 +1,19 @@
-# my-github-app
+# Perf Bot
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+Perf Bot is a Git Hub bot to allow developers to run performance tests on dedicated performance hardware per PR. 
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+Perf Bot will execute pre-defined performance tests against the current PR branch and a configurable baseline and use Horreum to determine if there has been any performance regressions
+
+## Pre-requisits
+
+### Running redis instance
+
+perf-bot uses redis to cache Github Events, start a redis instance;
+
+```bash
+docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:latest
+```
+
 
 ## Running the application in dev mode
 
